@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2013-07-15 12:32:59
+<?php /* Smarty version Smarty-3.1.14, created on 2013-07-15 14:10:20
          compiled from "index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:647651e3c770e90c35-59881966%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e43b807af9cc8df7d350c3baf9e47f167c9520a0' => 
     array (
       0 => 'index.tpl',
-      1 => 1373884614,
+      1 => 1373885094,
       2 => 'file',
     ),
   ),
@@ -19,44 +19,200 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_51e3c77105e2a2_99360131',
   'variables' => 
   array (
-    'hptitle' => 0,
-    'aProjects' => 0,
     'sTitle' => 0,
     'sText' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51e3c77105e2a2_99360131')) {function content_51e3c77105e2a2_99360131($_smarty_tpl) {?><!-- Hello, this is: <?php echo $_smarty_tpl->tpl_vars['hptitle']->value;?>
- !
-Die Projekte sind : <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']);
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['name'] = 'sProjects';
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['aProjects']->value) ? count($_loop) : max(0, (int)$_loop); unset($_loop);
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['show'] = true;
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['loop'];
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['step'] = 1;
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['start'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['step'] > 0 ? 0 : $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['loop']-1;
-if ($_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['show']) {
-    $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['total'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['loop'];
-    if ($_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['total'] == 0)
-        $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['show'] = false;
-} else
-    $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['total'] = 0;
-if ($_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['show']):
+<?php if ($_valid && !is_callable('content_51e3c77105e2a2_99360131')) {function content_51e3c77105e2a2_99360131($_smarty_tpl) {?><html>
+	<head>
+		<script type = "text/javascript" src = "http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type = "text/javascript">
+	
+		$(document).ready(function()
+			{
+				$("#openMenu").click(function()
+					{
+						$("#menu").slideToggle(200);
+					}
+				);
+			}
+		);
+		
+		</script>
+		
+		<style = "text/css">
+			#openMenu 
+				{
+					width:200;
+					height:40px;
+					background:#002211;
+					color:black;
+					position:absolute;
+					top:10px;
+					left:10px;
+					font-size:16px;
+					text-align:center;
+					cursor:pointer;
+					
+				}
+			
+			
+			
+			#menu
+				{
+					width:200px;
+					background:#00331A;
+					position:absolute;
+					top:60px;
+					left:10;
+					text-align:center;
+					display:none;
+					bottom: 10px;
+					z-index: 2;
+					overflow-y: scroll;
+				}
+			
+			#menu p
+				{
+					color:green;
+					padding:15px;
+					text-align:justify;
+					z-index: 2;
+				}
+			
+			#projekt
+				{
+					position: absolute;
+					background: #006600;
+					left: 10px;
+					right: 10px;
+					top: 60px;
+					bottom: 10px;
+					z-index: 1;
+					
+				}
+			
+			.bla
+				{
+					position: absolute;
+					top: 10;
+					left: 10;
+					right: 10;
+					bottom: 10;
+					
+				}
+				
+			#title 
+				{
+					right: 10px;
+					height:40px;
+					left: 220px;
+					background:#002211;
+					color:black;
+					position:absolute;
+					top:10px;
+					font-size:16px;
+					text-align:center;
+					
+				}
 
-            for ($_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['index'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['start'], $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['iteration'] = 1;
-                 $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['iteration'] <= $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['total'];
-                 $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['index'] += $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['step'], $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['iteration']++):
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['rownum'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['iteration'];
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['index_prev'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['index'] - $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['step'];
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['index_next'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['index'] + $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['step'];
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['iteration'] == 1);
-$_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['sProjects']['total']);
-?> 
-						<?php echo $_smarty_tpl->tpl_vars['aProjects']->value[$_smarty_tpl->getVariable('smarty')->value['section']['sProjects']['index']];?>
+		</style>
+	</head>
+	
+	<body bgcolor = "AAFFAA">
+	<div id = "menu">
+		<bla class = "bla">
+			<div id = "link1" style = "background: #AAFFAA; cursor: pointer;"></div>
+		
+		<br><br>
+	
+			<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
+		
+		<br><br>
+		</bla>
+		<br><br>
+		
+	</div>
+	
+	<div id = "openMenu">
+	<font size = "6" color = "FFFFFF">
+			Projekte
+	</font>
+	</div>
+	
+	<div id = "title">
+	<font size = "6" color = "FFFFFF">
+			Homepage der Projektwoche
+	</font>
+	</div>
+	
+	<div id = "projekt">
+	<font color = "FFFFFF" size = "1000">
+	<center><?php echo $_smarty_tpl->tpl_vars['sTitle']->value;?>
+</center>
+	<?php echo $_smarty_tpl->tpl_vars['sText']->value;?>
 
-					 <?php endfor; endif; ?>! -->
-					 
-<center><u><?php echo $_smarty_tpl->tpl_vars['sTitle']->value;?>
-</u></center>
-<i><?php echo $_smarty_tpl->tpl_vars['sText']->value;?>
-</i><?php }} ?>
+	</font>
+	</div>
+	
+	
+	</body>
+</html><?php }} ?>

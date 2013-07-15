@@ -15,7 +15,7 @@
 	
 	$oSmarty->debugging = false;
 	
-	/*
+	/* Old Source 
 	$oSmarty->assign("hptitle", "Meine Homepage!");
 	
 	$oSmarty->assign("aProjects",array("1","2","3","4","5","und so weiter..."));
@@ -26,5 +26,5 @@
 	$oSmarty->assign("sTitle", $aData['title']);
 	$oSmarty->assign("sText", $aData['text']);
 	
-	$oSmarty->display("index.html");
+	$oSmarty->display("index.tpl");
 ?>
