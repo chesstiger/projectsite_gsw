@@ -10,162 +10,61 @@
 						$("#menu").slideToggle(200);
 					}
 				);
+			
+				$(".subButton").click(showSideBar);				
+				function showSideBar()
+					{
+						/*$("#sidebar").animate({ 
+							Top: "=" + $(".subButton").css("Top") + "px",
+						}, 1000 );*/
+						//alert($(this).position().top);
+						//$("#sidebar").css("marginTop", $(this).css("marginTop"));
+						iIDNum = $(this).attr("id").substr(9);
+						
+						$("#sidebar" + iIDNum).css("top", $(this).offset().top - 9);
+						//$("#sidebar").show(-1);
+						$("#sidebar" + iIDNum).css("display", "block");
+						$(this).click(hideSideBar);
+					}
+				function hideSideBar()
+					{
+						//$("#sidebar").hide(-1);
+						iIDNum = $(this).attr("id").substr(9);
+						
+						$("#sidebar" + iIDNum).css("display", "none");
+						$(this).click(showSideBar);
+					}
+					
+							
+			
+			
 			}
 		);
 		
 		</script>
 		
-		<style = "text/css">
-			#openMenu 
-				{
-					width:200;
-					height:40px;
-					background:#002211;
-					color:black;
-					position:absolute;
-					top:10px;
-					left:10px;
-					font-size:16px;
-					text-align:center;
-					cursor:pointer;
-					
-				}
-			
-			
-			
-			#menu
-				{
-					width:200px;
-					background:#00331A;
-					position:absolute;
-					top:60px;
-					left:10;
-					text-align:center;
-					display:none;
-					bottom: 10px;
-					z-index: 2;
-					overflow-y: scroll;
-				}
-			
-			#menu p
-				{
-					color:green;
-					padding:15px;
-					text-align:justify;
-					z-index: 2;
-				}
-			
-			#projekt
-				{
-					position: absolute;
-					background: #006600;
-					left: 10px;
-					right: 10px;
-					top: 60px;
-					bottom: 10px;
-					z-index: 1;
-					
-				}
-			
-			.bla
-				{
-					position: absolute;
-					top: 10;
-					left: 10;
-					right: 10;
-					bottom: 10;
-					
-				}
-				
-			#title 
-				{
-					right: 10px;
-					height:40px;
-					left: 220px;
-					background:#002211;
-					color:black;
-					position:absolute;
-					top:10px;
-					font-size:16px;
-					text-align:center;
-					
-				}
-
+		<link rel="stylesheet" type="text/css" href="design.css">
+	
 		</style>
 	</head>
 	
 	<body bgcolor = "AAFFAA">
 	<div id = "menu">
-		<bla class = "bla">
-			<div id = "link1" style = "background: #AAFFAA; cursor: pointer;"></div>
-		
-		<br><br>
-	
-			<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		<div id = "link1" style = "background: #AAFFAA; cursor: pointer;">platzhalter</div>
-		
-		<br><br>
-		</bla>
+		<div class = "bla">
+			{section name=sTitle_loop loop=$avInfo_Title} 
+						<div class="subButton" id="subbutton{$smarty.section.sTitle_loop.index}" onclick="">Projekt {$avInfo_ProjectID[sTitle_loop]} <br> {$avInfo_ProjectName[sTitle_loop]}</div><br>
+			{/section}
+		</div>
 		<br><br>
 		
 	</div>
 	
+	{section name=sidebar loop=$avInfo_Title}
+		<div class="sidebar" id="sidebar{$smarty.section.sidebar.index}" style="display: none;">
+			{section name=sidebar loop=$avInfo_Title}
+			{/section}
+		</div> 
+	{/section}
 	<div id = "openMenu">
 	<font size = "6" color = "FFFFFF">
 			Projekte
@@ -178,11 +77,13 @@
 	</font>
 	</div>
 	
-	<div id = "projekt">
-	<font color = "FFFFFF" size = "1000">
-	<center>{$sTitle}</center>
-	{$sText}
-	</font>
+	<div id="projekt" style="color: white;">
+		<span style="font-size: 64;">
+			<center>{$sTitle}</center><br>
+		</span>
+		<span style="font-size: 16;">
+			{$sText}
+		</span>
 	</div>
 	
 	

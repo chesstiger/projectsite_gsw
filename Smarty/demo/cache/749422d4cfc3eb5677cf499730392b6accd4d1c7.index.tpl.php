@@ -1,4 +1,4 @@
-<?php /*%%SmartyHeaderCode:406151e3c585ea6682-41147287%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1189751e511b70b0a09-19064887%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -27,7 +27,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '406151e3c585ea6682-41147287',
+  'nocache_hash' => '1189751e511b70b0a09-19064887',
   'variables' => 
   array (
     'SCRIPT_NAME' => 0,
@@ -41,10 +41,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => true,
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_51e3c587d7e6a9_65005528',
+  'unifunc' => 'content_51e511b7cf26e6_34512377',
   'cache_lifetime' => 120,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51e3c587d7e6a9_65005528')) {function content_51e3c587d7e6a9_65005528($_smarty_tpl) {?><HTML>
+<?php if ($_valid && !is_callable('content_51e511b7cf26e6_34512377')) {function content_51e511b7cf26e6_34512377($_smarty_tpl) {?><HTML>
 <HEAD>
 <TITLE>foo - <?php echo $_smarty_tpl->tpl_vars['Name']->value;?>
 </TITLE>
@@ -58,11 +58,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <b>
 Title: Welcome To Smarty!
 </b>
-The current date and time is 2013-07-15 11:48:55
+The current date and time is 2013-07-16 11:26:15
 
 The value of global assigned variable $SCRIPT_NAME is /Smarty/demo/index.php
 
-Example of accessing server environment variable SERVER_NAME: 127.0.0.1
+Example of accessing server environment variable SERVER_NAME: sebastian-pc
 
 The value of {$Name} is <b><?php echo $_smarty_tpl->tpl_vars['Name']->value;?>
 </b>
@@ -127,8 +127,8 @@ This is an example of the html_select_date function:
 <option value="12">12</option>
 <option value="13">13</option>
 <option value="14">14</option>
-<option value="15" selected="selected">15</option>
-<option value="16">16</option>
+<option value="15">15</option>
+<option value="16" selected="selected">16</option>
 <option value="17">17</option>
 <option value="18">18</option>
 <option value="19">19</option>
@@ -206,7 +206,7 @@ This is an example of the html_select_time function:
 <option value="23">23</option>
 <option value="24">24</option>
 <option value="25">25</option>
-<option value="26">26</option>
+<option value="26" selected="selected">26</option>
 <option value="27">27</option>
 <option value="28">28</option>
 <option value="29">29</option>
@@ -228,7 +228,7 @@ This is an example of the html_select_time function:
 <option value="45">45</option>
 <option value="46">46</option>
 <option value="47">47</option>
-<option value="48" selected="selected">48</option>
+<option value="48">48</option>
 <option value="49">49</option>
 <option value="50">50</option>
 <option value="51">51</option>
@@ -257,7 +257,7 @@ This is an example of the html_select_time function:
 <option value="12">12</option>
 <option value="13">13</option>
 <option value="14">14</option>
-<option value="15">15</option>
+<option value="15" selected="selected">15</option>
 <option value="16">16</option>
 <option value="17">17</option>
 <option value="18">18</option>
@@ -297,7 +297,7 @@ This is an example of the html_select_time function:
 <option value="52">52</option>
 <option value="53">53</option>
 <option value="54">54</option>
-<option value="55" selected="selected">55</option>
+<option value="55">55</option>
 <option value="56">56</option>
 <option value="57">57</option>
 <option value="58">58</option>

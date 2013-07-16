@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2013-07-15 11:48:53
+<?php /* Smarty version Smarty-3.1.14, created on 2013-07-16 11:26:15
          compiled from ".\templates\index.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:406151e3c585ea6682-41147287%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:1189751e511b70b0a09-19064887%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '406151e3c585ea6682-41147287',
+  'nocache_hash' => '1189751e511b70b0a09-19064887',
   'function' => 
   array (
   ),
@@ -28,13 +28,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => true,
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_51e3c586bc70e0_46301632',
+  'unifunc' => 'content_51e511b71cac68_07089050',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51e3c586bc70e0_46301632')) {function content_51e3c586bc70e0_46301632($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_capitalize')) include 'Z:\\Smarty\\libs\\plugins\\modifier.capitalize.php';
-if (!is_callable('smarty_modifier_date_format')) include 'Z:\\Smarty\\libs\\plugins\\modifier.date_format.php';
-if (!is_callable('smarty_function_html_select_date')) include 'Z:\\Smarty\\libs\\plugins\\function.html_select_date.php';
-if (!is_callable('smarty_function_html_select_time')) include 'Z:\\Smarty\\libs\\plugins\\function.html_select_time.php';
-if (!is_callable('smarty_function_html_options')) include 'Z:\\Smarty\\libs\\plugins\\function.html_options.php';
+<?php if ($_valid && !is_callable('content_51e511b71cac68_07089050')) {function content_51e511b71cac68_07089050($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_capitalize')) include 'C:\\Users\\Sebastian\\Documents\\GitHub\\projectsite_gsw\\Smarty\\libs\\plugins\\modifier.capitalize.php';
+if (!is_callable('smarty_modifier_date_format')) include 'C:\\Users\\Sebastian\\Documents\\GitHub\\projectsite_gsw\\Smarty\\libs\\plugins\\modifier.date_format.php';
+if (!is_callable('smarty_function_html_select_date')) include 'C:\\Users\\Sebastian\\Documents\\GitHub\\projectsite_gsw\\Smarty\\libs\\plugins\\function.html_select_date.php';
+if (!is_callable('smarty_function_html_select_time')) include 'C:\\Users\\Sebastian\\Documents\\GitHub\\projectsite_gsw\\Smarty\\libs\\plugins\\function.html_select_time.php';
+if (!is_callable('smarty_function_html_options')) include 'C:\\Users\\Sebastian\\Documents\\GitHub\\projectsite_gsw\\Smarty\\libs\\plugins\\function.html_options.php';
 ?><?php  $_config = new Smarty_Internal_Config("test.conf", $_smarty_tpl->smarty, $_smarty_tpl);$_config->loadConfigVars("setup", 'local'); ?>
 <?php echo $_smarty_tpl->getSubTemplate ("header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, null, array('title'=>'foo'), 0);?>
 
@@ -57,14 +57,14 @@ The value of global assigned variable $SCRIPT_NAME is <?php echo $_smarty_tpl->t
 Example of accessing server environment variable SERVER_NAME: <?php echo $_SERVER['SERVER_NAME'];?>
 
 
-The value of {$Name} is <b><?php echo '/*%%SmartyNocache:406151e3c585ea6682-41147287%%*/<?php echo $_smarty_tpl->tpl_vars[\'Name\']->value;?>
-/*/%%SmartyNocache:406151e3c585ea6682-41147287%%*/';?>
+The value of {$Name} is <b><?php echo '/*%%SmartyNocache:1189751e511b70b0a09-19064887%%*/<?php echo $_smarty_tpl->tpl_vars[\'Name\']->value;?>
+/*/%%SmartyNocache:1189751e511b70b0a09-19064887%%*/';?>
 </b>
 
 variable modifier example of {$Name|upper}
 
-<b><?php echo '/*%%SmartyNocache:406151e3c585ea6682-41147287%%*/<?php echo mb_strtoupper($_smarty_tpl->tpl_vars[\'Name\']->value, \'UTF-8\');?>
-/*/%%SmartyNocache:406151e3c585ea6682-41147287%%*/';?>
+<b><?php echo '/*%%SmartyNocache:1189751e511b70b0a09-19064887%%*/<?php echo mb_strtoupper($_smarty_tpl->tpl_vars[\'Name\']->value, \'UTF-8\');?>
+/*/%%SmartyNocache:1189751e511b70b0a09-19064887%%*/';?>
 </b>
 
 

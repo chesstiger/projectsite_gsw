@@ -1,0 +1,117 @@
+body
+	{
+		font-family: calibri;
+		background: AAFFAA;
+	}
+			
+#openMenu 
+	{
+		width:200;
+		height:40px;
+		background:#002211;
+		color:black;
+		position:absolute;
+		top:10px;
+		left:10px;
+		font-size:16px;
+		text-align:center;
+		cursor:pointer;
+		border-radius: 5px;
+					
+	}
+			
+			
+			
+#menu
+	{
+		width:213px;
+		background:#00331A;
+		position:absolute;
+		top:60px;
+		left:10;
+		text-align:center;
+		display:none;
+		bottom: 10px;
+		z-index: 2;
+		overflow-y: scroll;
+		border-radius: 5px;
+	}
+			
+#menu p
+	{
+		color:green;
+		padding:15px;
+		text-align:justify;
+		z-index: 2;
+		border-radius: 5px;
+	}
+			
+#projekt
+	{
+		position: absolute;
+		background: #006600;
+		left: 10px;
+		right: 10px;
+		top: 60px;
+		bottom: 10px;
+		z-index: 1;
+		border-radius: 5px;
+					
+	}
+			
+.bla
+	{
+		position: absolute;
+		top: 10;
+		left: 10;
+		right: 10;
+		bottom: 10;
+		border-radius: 5px;
+					
+	}
+				
+#title 
+	{
+		right: 10px;
+		height:40px;
+		left: 220px;
+		background:#002211;
+		color:black;
+		position:absolute;
+		top:10px;
+		font-size:16px;
+		text-align:center;
+		border-radius: 5px;
+					
+	}
+.subButton
+	{	
+		background: #AAFFAA; 
+		cursor: pointer;
+		height: 47px;
+		border-radius: 5px;
+	}
+			
+.sidebar
+	{
+		width:426px;
+		height: 50px;
+		background:#00331A;
+		position: absolute;
+		top: 0px;
+		left:220;
+		text-align:center;
+		display:none;
+		z-index: 2;
+		overflow-y: auto;
+		border-radius: 5px;
+	}
+			
+#sidebar p
+	{
+		color:green;
+		padding:0px;
+		text-align:justify;
+		z-index: 2;
+		border-radius: 5px;
+	}
