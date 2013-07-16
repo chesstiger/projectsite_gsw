@@ -1,2 +1,5 @@
 hat jemand ne Ahnugn warum mysql das blockiert ? :
 mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in
+
+EDIT auch ohne Passwort das gleiche:
+mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in C:\Users\Sebastian\Documents\GitHub\projectsite_gsw\index.php on line 7
