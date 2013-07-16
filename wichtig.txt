@@ -1,0 +1,2 @@
+hat jemand ne Ahnugn warum mysql das blockiert ? :
+mysql_connect(): Access denied for user 'root'@'localhost' (using password: YES) in
